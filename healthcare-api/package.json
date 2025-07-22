@@ -1,0 +1,33 @@
+{
+  "name": "healthcare-api",
+  "version": "1.0.0",
+  "description": "REST API for Healthcare Blockchain",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "rm -rf wallet/ && nodemon src/app.js",
+    "test": "mocha test/integration/*.test.js --recursive --exit --timeout 60000",
+    "test:integration": "npm test",
+    "test:patient": "mocha test/integration/patientDataLifecycle.test.js --exit",
+    "test:emergency": "mocha test/integration/emergencyAccess.test.js --exit",
+    "test:concurrent": "mocha test/integration/concurrentAccess.test.js --exit",
+    "test:crosslayer": "mocha test/integration/crossLayer.test.js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fabric-ca-client": "^2.2.20",
+    "fabric-network": "^2.2.20"
+  },
+  "devDependencies": {
+    "axios": "^1.10.0",
+    "chai": "^5.2.1",
+    "mocha": "^11.7.1",
+    "nodemon": "^3.1.0"
+  }
+}

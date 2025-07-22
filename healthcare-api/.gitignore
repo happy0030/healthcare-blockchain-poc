@@ -1,0 +1,55 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# Environment variables
+.env
+.env.test
+.env.*.local
+
+# Build output
+dist/
+build/
+tmp/
+temp/
+.cache/
+.next/
+out/
+coverage/
+lib/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+.nyc_output/
+coverage/
+jest-html-reporters-*.html
+test-results/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.tgz
+.pnp/
+.pnp.js
+.eslintcache
